@@ -1,0 +1,274 @@
+/*Accordion properties*/
+.moving-container .rc-collapse{
+  margin-top: 0px;
+}
+
+.main_container_share{
+  position: fixed;
+  bottom: 0;
+  width: 20%;
+}
+
+.rc-collapse {
+  margin-top: 2em;
+  background-color: #f4f4f4;
+  border-radius: 3px;
+  border: 1px solid #d9d9d9;
+}
+.rc-collapse-anim-active {
+  -webkit-transition: height 0.2s ease-out;
+  transition: height 0.2s ease-out;
+}
+.rc-collapse > .rc-collapse-item {
+  border-top: 1px solid #d9d9d9;
+}
+.rc-collapse > .rc-collapse-item:first-child {
+  border-top: none;
+}
+.rc-collapse > .rc-collapse-item > .rc-collapse-header {
+  height: 38px;
+  line-height: 38px;
+  text-indent: 16px;
+  color: #666;
+  cursor: pointer;
+}
+.rc-collapse > .rc-collapse-item > .rc-collapse-header .arrow {
+  display: inline-block;
+  content: '\20';
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-left: 4px solid #666;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.rc-collapse-content {
+  overflow: hidden;
+  color: #666;
+  padding: 0 16px;
+  background-color: #fff;
+}
+.rc-collapse-content > .rc-collapse-content-box {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.rc-collapse-content-inactive {
+  display: none;
+}
+.rc-collapse-item:last-child > .rc-collapse-content {
+  border-radius: 0 0 3px 3px;
+}
+.rc-collapse > .rc-collapse-item-active > .rc-collapse-header .arrow {
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 4px solid #666;
+  margin-right: 6px;
+}
+
+/*Body Properties*/
+
+body{
+  background-color: #F8F8F8;
+  width: 100%;
+}
+
+/*header Properties*/
+
+
+header{
+ width: 100%;
+ background-color: blue;
+ display: flex;
+
+}
+
+header h1{
+  color:white;
+  font-weight: lighter;
+  font-family: helvetica;
+}
+
+header ul{
+  display: flex;
+  list-style: none;
+  margin-top: 20px;
+  position: absolute;
+  right: 0;
+}
+
+header ul li{
+  color:white;
+  font-size: 24px;
+  font-weight: lighter;
+  font-family: helvetica;
+  padding-right: 2em;
+}
+
+/*Tasks properties*/
+
+.single_task_ul{
+  display: flex;
+  list-style: none;
+}
+
+
+
+.container{
+  margin-left: 0;
+  width: 100%;
+}
+
+.col-md-4 .main_container{
+  position: fixed;
+  width: 20%;
+}
+
+
+.main_container header h2{
+  color:white;
+  font-weight: lighter;
+  font-family: helvetica;
+}
+
+
+h1{
+  padding-bottom: 0;
+  font-weight: lighter;
+  font-family: helvetica;
+}
+
+ul{
+  margin: 0;
+}
+
+.fixed-container h1{
+  margin-bottom: 40px;
+  margin-top: 0px;
+  padding: 0;
+  font-size: 3vw;
+}
+.moving-nav nav h1{
+  padding: 0;
+  margin: 0;
+  font-size: 3vw;
+  font-weight: lighter;
+  font-family: helvetica;
+}
+/*Generic Rows proporties*/
+
+/*.row{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}*/
+
+
+.fixed-nav{
+  position: fixed;
+  margin-top: 2em;
+}
+
+.fixed-nav .fixed-container{
+  background-color: white;
+  padding: 0.5em;
+  margin: 3px;
+  /*border: 1px white;*/
+}
+
+.fixed-nav .fixed-container h2{
+  margin: 10px;
+  font-size: 22px;
+  font-weight: lighter;
+  font-family: helvetica;
+}
+
+.last {
+  position: fixed;
+  bottom: 0;
+  border: 1px blue;
+}
+
+ .moving-container {
+  padding-left: 0px;
+}
+
+
+.moving-nav .moving-container li{
+  justify-content: center;
+  background-color: white;
+  /*background-color: white;*/
+  padding: 8px;
+  margin: 3px;
+  font-weight: lighter;
+  font-family: helvetica;
+
+}
+
+.moving-nav .moving-container-first {
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.moving-nav .moving-container-first  h1{
+  margin:0px;
+  font-weight: lighter;
+  font-family: helvetica;
+}
+
+.moving-nav .moving-container  li{
+  /*font-size: 30px;*/
+  /*font-size: 2.3vw;*/
+  /*padding-left: 1em;*/
+  /*font-weight: lighter;*/
+  font-family: helvetica;
+}
+
+.moving-container  ul{
+  padding: 0px;
+  margin: 0px;
+}
+
+.preferences-shared-nav{
+  position: fixed;
+  bottom: 0;
+  /*background-color: #F95B5B;*/
+
+}
+
+.preferences-shared-nav .fixed-container h2{
+  margin: 10px;
+  font-size: 19px;
+  font-weight: lighter;
+  font-family: helvetica;
+}
+
+
+@media screen and (max-width: 992px) {
+    .fixed-container{
+      display: none;
+    }
+     ul.moving-container {
+      padding-left: 10px;
+
+    }
+    header .col-md-9 h2 {
+     display: none;
+
+   }
+
+}
+
+
+@media screen and (max-width: 520px) {
+.moving-nav .moving-container  li{
+  font-size: 4.5vw;
+  list-decoration: none;
+}
+ul.moving-container {
+  list-style: none;
+  padding: 0;
+}
+}
