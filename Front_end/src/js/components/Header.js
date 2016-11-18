@@ -20,7 +20,7 @@ var Header = React.createClass({
                               <Col md={9}>
                               <ul>
                                 <li>Welcome back, Cyrus</li>
-                                <li>Logout</li>
+                                <li><button>Logout</button></li>
                               </ul>  
                             </Col>
                          </Row>

@@ -26,6 +26,9 @@ export class Home extends React.Component {
     this.props.auth.logout()
     this.context.router.push('/login');
   }
+  loadApp() {
+    this.context.router.push('/app');  
+  }
 
   render(){
     const { profile } = this.state
@@ -35,6 +38,8 @@ export class Home extends React.Component {
         <p>Welcome {profile.nickname}!</p>
         { console.log(profile) }
         <Button onClick={this.logout.bind(this)}>Logout</Button>
+        <Button onClick={this.loadApp.bind(this)}>Tasks List</Button>
+        
       </div>
     )
   }
